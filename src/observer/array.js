@@ -34,7 +34,6 @@ methods.forEach(method => {
             // 對新增的內容再次進行觀測
             ob.observeArray(inserted);
         }
-        // console.log('method', method)
         return result;
     }
 })

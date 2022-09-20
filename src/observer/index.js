@@ -21,10 +21,6 @@ class Observer {
         }
     }
     walk(data) {
-        // let keys = Object.keys(data);
-        // keys.forEach((key, index) => {
-        //     defineReactive(data, key, data[key]);
-        // })
         Object.keys(data).forEach(key => defineReactive(data, key, data[key]))
     }
     observeArray(data) { // 觀測數組
